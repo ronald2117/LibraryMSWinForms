@@ -6,7 +6,7 @@ Public Class Form1
 
     Private Sub btnTest_Click(sender As Object, e As EventArgs) Handles btnTest.Click
         conn = New MySqlConnection
-        conn.ConnectionString = "server=127.0.0.1;userid=root;password='';database=test"
+        conn.ConnectionString = "server=127.0.0.1;userid=root;password='';database=superdatabase"
         Try
             conn.Open()
             MessageBox.Show("Connection to MySQL test database was successful!!!!", "TESTING CONNECTION TO MySQL DATABASE")
@@ -19,12 +19,12 @@ Public Class Form1
 
     Private Sub LoginBtn_Click(sender As Object, e As EventArgs) Handles LoginBtn.Click
         conn = New MySqlConnection
-        conn.ConnectionString = "server=127.0.0.1;userid=root;password='';database=test"
+        conn.ConnectionString = "server=127.0.0.1;userid=root;password='';database=superdatabase"
         Dim READER As MySqlDataReader
         Try
             conn.Open()
             Dim Query As String
-            Query = "SELECT * FROM Accounts WHERE username = '" & Username.Text & "' AND password = '" & Password.Text & "'"
+            Query = "SELECT * FROM edata WHERE user_name = '" & Username.Text & "' AND password = '" & Password.Text & "'"
             COMMAND = New MySqlCommand(Query, conn)
             Dim count As Integer
             READER = COMMAND.ExecuteReader

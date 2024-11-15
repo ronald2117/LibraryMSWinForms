@@ -52,6 +52,7 @@ Partial Class Form1
         ' 
         Password.Location = New Point(302, 176)
         Password.Name = "Password"
+        Password.PasswordChar = "*"c
         Password.Size = New Size(100, 23)
         Password.TabIndex = 9
         ' 
@@ -82,7 +83,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(LoginBtn)
