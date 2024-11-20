@@ -1,18 +1,19 @@
 ﻿Imports System.Diagnostics.Eventing
 Imports MySql.Data.MySqlClient
 
-Public Class Form1
+Public Class LoginForm
+
     Dim conn As MySqlConnection
     Dim COMMAND As MySqlCommand
 
     Private Sub LoginBtn_Click(sender As Object, e As EventArgs) Handles LoginBtn.Click
         conn = New MySqlConnection
-        conn.ConnectionString = "server=127.0.0.1;userid=root;password='';database=superdatabase"
+        conn.ConnectionString = "server=127.0.0.1;userid=root;password='';database=library_management_system"
         Dim READER As MySqlDataReader
         Try
             conn.Open()
             Dim Query As String
-            Query = "SELECT * FROM edata WHERE user_name = '" & Username.Text & "' AND password = '" & Password.Text & "'"
+            Query = "SELECT * FROM users WHERE Username = '" & Username.Text & "' AND Password = '" & Password.Text & "'"
             COMMAND = New MySqlCommand(Query, conn)
             Dim count As Integer
             READER = COMMAND.ExecuteReader
@@ -34,4 +35,5 @@ Public Class Form1
             conn.Close()
         End Try
     End Sub
+
 End Class
