@@ -99,7 +99,7 @@ Partial Class LoginForm
         panelLogin.Controls.Add(Label1)
         panelLogin.Controls.Add(Password)
         panelLogin.Controls.Add(Label2)
-        panelLogin.Location = New Point(374, 55)
+        panelLogin.Location = New Point(377, 50)
         panelLogin.Name = "panelLogin"
         panelLogin.Size = New Size(311, 350)
         panelLogin.TabIndex = 11
@@ -138,7 +138,7 @@ Partial Class LoginForm
         panelLibRoom.BackgroundImage = My.Resources.Resources.library_room
         panelLibRoom.BackgroundImageLayout = ImageLayout.Stretch
         panelLibRoom.Controls.Add(panelBkShelves)
-        panelLibRoom.Location = New Point(109, 55)
+        panelLibRoom.Location = New Point(112, 50)
         panelLibRoom.Name = "panelLibRoom"
         panelLibRoom.Size = New Size(268, 350)
         panelLibRoom.TabIndex = 13
@@ -153,6 +153,7 @@ Partial Class LoginForm
         Font = New Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
         Name = "LoginForm"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Login - Library Management System"
         panelLogin.ResumeLayout(False)
         panelLogin.PerformLayout()

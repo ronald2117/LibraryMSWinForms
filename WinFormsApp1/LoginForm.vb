@@ -7,13 +7,15 @@ Public Class LoginForm
     Dim COMMAND As MySqlCommand
 
     Private Sub LoginBtn_Click(sender As Object, e As EventArgs) Handles LoginBtn.Click
+        Dim mainPage As New MainPage()
+
         conn = New MySqlConnection
         conn.ConnectionString = "server=127.0.0.1;userid=root;password='';database=library_management_system"
         Dim READER As MySqlDataReader
         Try
             conn.Open()
             Dim Query As String
-            Query = "SELECT * FROM users WHERE Username = '" & Username.Text & "' AND Password = '" & Password.Text & "'"
+            Query = "SELECT * FROM librarian WHERE username = '" & Username.Text & "' AND password = '" & Password.Text & "'"
             COMMAND = New MySqlCommand(Query, conn)
             Dim count As Integer
             READER = COMMAND.ExecuteReader
@@ -23,6 +25,8 @@ Public Class LoginForm
             End While
             If count = 1 Then
                 MessageBox.Show("Login successful!")
+                Me.Hide()
+                mainPage.Show()
             ElseIf count > 1 Then
                 MessageBox.Show("Username and password are duplicate!")
             Else
