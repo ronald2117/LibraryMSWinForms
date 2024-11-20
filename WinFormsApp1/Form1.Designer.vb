@@ -22,22 +22,12 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        btnTest = New Button()
         LoginBtn = New Button()
         Password = New TextBox()
         Label2 = New Label()
         Username = New TextBox()
         Label1 = New Label()
         SuspendLayout()
-        ' 
-        ' btnTest
-        ' 
-        btnTest.Location = New Point(111, 71)
-        btnTest.Name = "btnTest"
-        btnTest.Size = New Size(125, 38)
-        btnTest.TabIndex = 0
-        btnTest.Text = "Connection Test"
-        btnTest.UseVisualStyleBackColor = True
         ' 
         ' LoginBtn
         ' 
@@ -91,14 +81,11 @@ Partial Class Form1
         Controls.Add(Label2)
         Controls.Add(Username)
         Controls.Add(Label1)
-        Controls.Add(btnTest)
         Name = "Form1"
         Text = "MYSQL DATABASE CONNECTION"
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents btnTest As Button
     Friend WithEvents LoginBtn As Button
     Friend WithEvents Password As TextBox
     Friend WithEvents Label2 As Label
