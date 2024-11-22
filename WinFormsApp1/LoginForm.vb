@@ -24,7 +24,6 @@ Public Class LoginForm
                 count = count + 1
             End While
             If count = 1 Then
-                MessageBox.Show("Login successful!")
                 Me.Hide()
                 mainPage.Show()
             ElseIf count > 1 Then
