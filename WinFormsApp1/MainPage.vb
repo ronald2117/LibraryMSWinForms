@@ -1,5 +1,7 @@
 ﻿Public Class MainPage
-    Private Sub Button1_Click_2(sender As Object, e As EventArgs)
-
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        Dim loginForm As New LoginForm()
+        Me.Hide()
+        loginForm.Show()
     End Sub
 End Class
