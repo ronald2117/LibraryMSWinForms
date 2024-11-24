@@ -30,10 +30,10 @@ Partial Class MainPage
         LinkLabel1 = New LinkLabel()
         LinkLabel2 = New LinkLabel()
         Panel1 = New Panel()
-        Label1 = New Label()
-        btnLogout = New Button()
-        LinkLabel4 = New LinkLabel()
         LinkLabel3 = New LinkLabel()
+        LinkLabel4 = New LinkLabel()
+        btnLogout = New Button()
+        Label1 = New Label()
         CType(picLogo, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -49,7 +49,7 @@ Partial Class MainPage
         ' lblTitle1
         ' 
         lblTitle1.AutoSize = True
-        lblTitle1.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTitle1.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblTitle1.Location = New Point(121, 39)
         lblTitle1.Name = "lblTitle1"
         lblTitle1.Size = New Size(94, 26)
@@ -69,7 +69,7 @@ Partial Class MainPage
         ' lblTitle2
         ' 
         lblTitle2.AutoSize = True
-        lblTitle2.Font = New Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTitle2.Font = New Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblTitle2.Location = New Point(121, 65)
         lblTitle2.Name = "lblTitle2"
         lblTitle2.Size = New Size(180, 22)
@@ -102,7 +102,7 @@ Partial Class MainPage
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        Panel1.BackColor = Color.FromArgb(255, 98, 0)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(btnLogout)
         Panel1.Controls.Add(LinkLabel4)
@@ -119,24 +119,17 @@ Partial Class MainPage
         Panel1.Size = New Size(799, 111)
         Panel1.TabIndex = 18
         ' 
-        ' Label1
+        ' LinkLabel3
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(668, 39)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(77, 15)
-        Label1.TabIndex = 19
-        Label1.Text = "User - Admin"
-        ' 
-        ' btnLogout
-        ' 
-        btnLogout.ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
-        btnLogout.Location = New Point(668, 57)
-        btnLogout.Name = "btnLogout"
-        btnLogout.Size = New Size(58, 25)
-        btnLogout.TabIndex = 20
-        btnLogout.Text = "Signout"
-        btnLogout.UseVisualStyleBackColor = True
+        LinkLabel3.ActiveLinkColor = Color.White
+        LinkLabel3.AutoSize = True
+        LinkLabel3.LinkColor = Color.White
+        LinkLabel3.Location = New Point(479, 57)
+        LinkLabel3.Name = "LinkLabel3"
+        LinkLabel3.Size = New Size(60, 15)
+        LinkLabel3.TabIndex = 18
+        LinkLabel3.TabStop = True
+        LinkLabel3.Text = "Borrowers"
         ' 
         ' LinkLabel4
         ' 
@@ -152,17 +145,24 @@ Partial Class MainPage
         LinkLabel4.Text = "Transactions"
         LinkLabel4.TextAlign = ContentAlignment.TopCenter
         ' 
-        ' LinkLabel3
+        ' btnLogout
         ' 
-        LinkLabel3.ActiveLinkColor = Color.White
-        LinkLabel3.AutoSize = True
-        LinkLabel3.LinkColor = Color.White
-        LinkLabel3.Location = New Point(479, 57)
-        LinkLabel3.Name = "LinkLabel3"
-        LinkLabel3.Size = New Size(60, 15)
-        LinkLabel3.TabIndex = 18
-        LinkLabel3.TabStop = True
-        LinkLabel3.Text = "Borrowers"
+        btnLogout.ForeColor = Color.FromArgb(255, 98, 0)
+        btnLogout.Location = New Point(668, 57)
+        btnLogout.Name = "btnLogout"
+        btnLogout.Size = New Size(58, 25)
+        btnLogout.TabIndex = 20
+        btnLogout.Text = "Signout"
+        btnLogout.UseVisualStyleBackColor = True
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(668, 39)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(77, 15)
+        Label1.TabIndex = 19
+        Label1.Text = "User - Admin"
         ' 
         ' MainPage
         ' 
@@ -170,7 +170,7 @@ Partial Class MainPage
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(Panel1)
-        ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        ForeColor = Color.FromArgb(255, 98, 0)
         Name = "MainPage"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form2"
