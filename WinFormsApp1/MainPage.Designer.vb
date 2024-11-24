@@ -49,7 +49,7 @@ Partial Class MainPage
         ' lblTitle1
         ' 
         lblTitle1.AutoSize = True
-        lblTitle1.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lblTitle1.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblTitle1.Location = New Point(121, 39)
         lblTitle1.Name = "lblTitle1"
         lblTitle1.Size = New Size(94, 26)
@@ -69,7 +69,7 @@ Partial Class MainPage
         ' lblTitle2
         ' 
         lblTitle2.AutoSize = True
-        lblTitle2.Font = New Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        lblTitle2.Font = New Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblTitle2.Location = New Point(121, 65)
         lblTitle2.Name = "lblTitle2"
         lblTitle2.Size = New Size(180, 22)
@@ -80,10 +80,11 @@ Partial Class MainPage
         ' 
         LinkLabel1.ActiveLinkColor = Color.White
         LinkLabel1.AutoSize = True
+        LinkLabel1.Font = New Font("Times New Roman", 12F)
         LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(346, 57)
+        LinkLabel1.Location = New Point(325, 46)
         LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(40, 15)
+        LinkLabel1.Size = New Size(46, 19)
         LinkLabel1.TabIndex = 16
         LinkLabel1.TabStop = True
         LinkLabel1.Text = "Home"
@@ -92,17 +93,18 @@ Partial Class MainPage
         ' 
         LinkLabel2.ActiveLinkColor = Color.White
         LinkLabel2.AutoSize = True
+        LinkLabel2.Font = New Font("Times New Roman", 12F)
         LinkLabel2.LinkColor = Color.White
-        LinkLabel2.Location = New Point(404, 57)
+        LinkLabel2.Location = New Point(383, 46)
         LinkLabel2.Name = "LinkLabel2"
-        LinkLabel2.Size = New Size(57, 15)
+        LinkLabel2.Size = New Size(66, 19)
         LinkLabel2.TabIndex = 17
         LinkLabel2.TabStop = True
         LinkLabel2.Text = "Inventory"
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(255, 98, 0)
+        Panel1.BackColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(btnLogout)
         Panel1.Controls.Add(LinkLabel4)
@@ -122,18 +124,20 @@ Partial Class MainPage
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(668, 39)
+        Label1.Font = New Font("Times New Roman", 12F)
+        Label1.Location = New Point(651, 38)
         Label1.Name = "Label1"
-        Label1.Size = New Size(77, 15)
+        Label1.Size = New Size(91, 19)
         Label1.TabIndex = 19
         Label1.Text = "User - Admin"
         ' 
         ' btnLogout
         ' 
-        btnLogout.ForeColor = Color.FromArgb(255, 98, 0)
-        btnLogout.Location = New Point(668, 57)
+        btnLogout.Font = New Font("Times New Roman", 12F)
+        btnLogout.ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        btnLogout.Location = New Point(670, 60)
         btnLogout.Name = "btnLogout"
-        btnLogout.Size = New Size(58, 25)
+        btnLogout.Size = New Size(72, 27)
         btnLogout.TabIndex = 20
         btnLogout.Text = "Signout"
         btnLogout.UseVisualStyleBackColor = True
@@ -142,11 +146,12 @@ Partial Class MainPage
         ' 
         LinkLabel4.ActiveLinkColor = Color.White
         LinkLabel4.AutoSize = True
+        LinkLabel4.Font = New Font("Times New Roman", 12F)
         LinkLabel4.LinkColor = Color.White
-        LinkLabel4.Location = New Point(557, 57)
+        LinkLabel4.Location = New Point(536, 46)
         LinkLabel4.Name = "LinkLabel4"
         LinkLabel4.RightToLeft = RightToLeft.No
-        LinkLabel4.Size = New Size(72, 15)
+        LinkLabel4.Size = New Size(84, 19)
         LinkLabel4.TabIndex = 19
         LinkLabel4.TabStop = True
         LinkLabel4.Text = "Transactions"
@@ -156,10 +161,11 @@ Partial Class MainPage
         ' 
         LinkLabel3.ActiveLinkColor = Color.White
         LinkLabel3.AutoSize = True
+        LinkLabel3.Font = New Font("Times New Roman", 12F)
         LinkLabel3.LinkColor = Color.White
-        LinkLabel3.Location = New Point(479, 57)
+        LinkLabel3.Location = New Point(458, 46)
         LinkLabel3.Name = "LinkLabel3"
-        LinkLabel3.Size = New Size(60, 15)
+        LinkLabel3.Size = New Size(74, 19)
         LinkLabel3.TabIndex = 18
         LinkLabel3.TabStop = True
         LinkLabel3.Text = "Borrowers"
@@ -168,9 +174,10 @@ Partial Class MainPage
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(800, 449)
         Controls.Add(Panel1)
-        ForeColor = Color.FromArgb(255, 98, 0)
+        Font = New Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
         Name = "MainPage"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form2"
