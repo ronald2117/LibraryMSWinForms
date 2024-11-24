@@ -34,6 +34,7 @@ Partial Class LoginForm
         title2 = New Label()
         panelBkShelves = New Panel()
         panelLibRoom = New Panel()
+        LinkLabel2 = New LinkLabel()
         panelLogin.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         panelLibRoom.SuspendLayout()
@@ -92,6 +93,7 @@ Partial Class LoginForm
         ' 
         panelLogin.BackColor = SystemColors.Window
         panelLogin.BorderStyle = BorderStyle.FixedSingle
+        panelLogin.Controls.Add(LinkLabel2)
         panelLogin.Controls.Add(PictureBox1)
         panelLogin.Controls.Add(title2)
         panelLogin.Controls.Add(Username)
@@ -143,6 +145,17 @@ Partial Class LoginForm
         panelLibRoom.Size = New Size(268, 350)
         panelLibRoom.TabIndex = 13
         ' 
+        ' LinkLabel2
+        ' 
+        LinkLabel2.AutoSize = True
+        LinkLabel2.LinkColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        LinkLabel2.Location = New Point(162, 317)
+        LinkLabel2.Name = "LinkLabel2"
+        LinkLabel2.Size = New Size(48, 15)
+        LinkLabel2.TabIndex = 14
+        LinkLabel2.TabStop = True
+        LinkLabel2.Text = "Sign up"
+        ' 
         ' LoginForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -172,5 +185,7 @@ Partial Class LoginForm
     Friend WithEvents panelBkShelves As Panel
     Friend WithEvents panelLibRoom As Panel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents LinkLabel1 As LinkLabel
 
 End Class

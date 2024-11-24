@@ -39,4 +39,9 @@ Public Class LoginForm
         End Try
     End Sub
 
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        Dim registrationPage As New RegistrationPage()
+        Me.Hide()
+        registrationPage.Show()
+    End Sub
 End Class
