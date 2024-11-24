@@ -49,7 +49,7 @@ Partial Class MainPage
         ' lblTitle1
         ' 
         lblTitle1.AutoSize = True
-        lblTitle1.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTitle1.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblTitle1.Location = New Point(121, 39)
         lblTitle1.Name = "lblTitle1"
         lblTitle1.Size = New Size(94, 26)
@@ -69,7 +69,7 @@ Partial Class MainPage
         ' lblTitle2
         ' 
         lblTitle2.AutoSize = True
-        lblTitle2.Font = New Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTitle2.Font = New Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0)
         lblTitle2.Location = New Point(121, 65)
         lblTitle2.Name = "lblTitle2"
         lblTitle2.Size = New Size(180, 22)
@@ -102,7 +102,7 @@ Partial Class MainPage
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        Panel1.BackColor = Color.FromArgb(255, 98, 0)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(btnLogout)
         Panel1.Controls.Add(LinkLabel4)
@@ -130,7 +130,7 @@ Partial Class MainPage
         ' 
         ' btnLogout
         ' 
-        btnLogout.ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        btnLogout.ForeColor = Color.FromArgb(255, 98, 0)
         btnLogout.Location = New Point(668, 57)
         btnLogout.Name = "btnLogout"
         btnLogout.Size = New Size(58, 25)
@@ -170,7 +170,7 @@ Partial Class MainPage
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(Panel1)
-        ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        ForeColor = Color.FromArgb(255, 98, 0)
         Name = "MainPage"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form2"
