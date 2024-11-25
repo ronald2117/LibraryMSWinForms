@@ -34,6 +34,10 @@ Partial Class MainPage
         btnLogout = New Button()
         LinkLabel4 = New LinkLabel()
         LinkLabel3 = New LinkLabel()
+        Label3 = New Label()
+        Label4 = New Label()
+        Label5 = New Label()
+        Label6 = New Label()
         CType(picLogo, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -170,21 +174,66 @@ Partial Class MainPage
         LinkLabel3.TabStop = True
         LinkLabel3.Text = "Borrowers"
         ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Times New Roman", 12F)
+        Label3.Location = New Point(68, 152)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(172, 19)
+        Label3.TabIndex = 19
+        Label3.Text = "Welcome - Ronald A Sope"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Times New Roman", 12F)
+        Label4.Location = New Point(68, 176)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(112, 19)
+        Label4.TabIndex = 20
+        Label4.Text = "Total books: 200"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Times New Roman", 12F)
+        Label5.Location = New Point(68, 202)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(136, 19)
+        Label5.TabIndex = 21
+        Label5.Text = "Borrowed books: 50"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Times New Roman", 12F)
+        Label6.Location = New Point(68, 226)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(145, 19)
+        Label6.TabIndex = 22
+        Label6.Text = "Overdue books: None"
+        ' 
         ' MainPage
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 449)
+        Controls.Add(Label6)
+        Controls.Add(Label5)
+        Controls.Add(Label4)
+        Controls.Add(Label3)
         Controls.Add(Panel1)
         Font = New Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
         Name = "MainPage"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form2"
+        Text = "Home - Library Management System"
         CType(picLogo, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
     Friend WithEvents Label2 As Label
     Friend WithEvents lblTitle1 As Label
@@ -198,4 +247,8 @@ Partial Class MainPage
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents btnLogout As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
 End Class

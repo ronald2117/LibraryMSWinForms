@@ -30,11 +30,11 @@ Partial Class LoginForm
         Label1 = New Label()
         BackgroundWorker1 = New ComponentModel.BackgroundWorker()
         panelLogin = New Panel()
+        LinkLabel2 = New LinkLabel()
         PictureBox1 = New PictureBox()
         title2 = New Label()
         panelBkShelves = New Panel()
         panelLibRoom = New Panel()
-        LinkLabel2 = New LinkLabel()
         panelLogin.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         panelLibRoom.SuspendLayout()
@@ -64,9 +64,10 @@ Partial Class LoginForm
         ' 
         Label2.AutoSize = True
         Label2.BackColor = SystemColors.Window
-        Label2.Location = New Point(57, 267)
+        Label2.Font = New Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(56, 261)
         Label2.Name = "Label2"
-        Label2.Size = New Size(55, 15)
+        Label2.Size = New Size(72, 19)
         Label2.TabIndex = 8
         Label2.Text = "Password"
         ' 
@@ -82,10 +83,10 @@ Partial Class LoginForm
         ' 
         Label1.AutoSize = True
         Label1.BackColor = SystemColors.Window
-        Label1.Font = New Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(57, 228)
+        Label1.Font = New Font("Cambria", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(45, 222)
         Label1.Name = "Label1"
-        Label1.Size = New Size(63, 14)
+        Label1.Size = New Size(83, 19)
         Label1.TabIndex = 6
         Label1.Text = "Username"
         ' 
@@ -105,6 +106,17 @@ Partial Class LoginForm
         panelLogin.Name = "panelLogin"
         panelLogin.Size = New Size(311, 350)
         panelLogin.TabIndex = 11
+        ' 
+        ' LinkLabel2
+        ' 
+        LinkLabel2.AutoSize = True
+        LinkLabel2.LinkColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        LinkLabel2.Location = New Point(162, 317)
+        LinkLabel2.Name = "LinkLabel2"
+        LinkLabel2.Size = New Size(48, 15)
+        LinkLabel2.TabIndex = 14
+        LinkLabel2.TabStop = True
+        LinkLabel2.Text = "Sign up"
         ' 
         ' PictureBox1
         ' 
@@ -144,17 +156,6 @@ Partial Class LoginForm
         panelLibRoom.Name = "panelLibRoom"
         panelLibRoom.Size = New Size(268, 350)
         panelLibRoom.TabIndex = 13
-        ' 
-        ' LinkLabel2
-        ' 
-        LinkLabel2.AutoSize = True
-        LinkLabel2.LinkColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
-        LinkLabel2.Location = New Point(162, 317)
-        LinkLabel2.Name = "LinkLabel2"
-        LinkLabel2.Size = New Size(48, 15)
-        LinkLabel2.TabIndex = 14
-        LinkLabel2.TabStop = True
-        LinkLabel2.Text = "Sign up"
         ' 
         ' LoginForm
         ' 

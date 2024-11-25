@@ -270,6 +270,7 @@ Partial Class RegistrationPage
         Font = New Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
         Name = "RegistrationPage"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Registration - Library Management System"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
