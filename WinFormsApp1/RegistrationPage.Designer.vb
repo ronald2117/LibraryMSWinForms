@@ -37,7 +37,7 @@ Partial Class RegistrationPage
         Label5 = New Label()
         txtBoxLastName = New TextBox()
         Label6 = New Label()
-        txtBoxUserName = New TextBox()
+        txtBoxUsername = New TextBox()
         Label7 = New Label()
         txtBoxPassword = New TextBox()
         Label8 = New Label()
@@ -61,7 +61,7 @@ Partial Class RegistrationPage
         Panel1.Location = New Point(1, 0)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(913, 105)
-        Panel1.TabIndex = 19
+        Panel1.TabIndex = 14
         ' 
         ' lblTitle2
         ' 
@@ -70,7 +70,7 @@ Partial Class RegistrationPage
         lblTitle2.Location = New Point(142, 55)
         lblTitle2.Name = "lblTitle2"
         lblTitle2.Size = New Size(180, 22)
-        lblTitle2.TabIndex = 19
+        lblTitle2.TabIndex = 1
         lblTitle2.Text = "Management System"
         ' 
         ' lblTitle1
@@ -80,7 +80,7 @@ Partial Class RegistrationPage
         lblTitle1.Location = New Point(142, 26)
         lblTitle1.Name = "lblTitle1"
         lblTitle1.Size = New Size(94, 26)
-        lblTitle1.TabIndex = 18
+        lblTitle1.TabIndex = 2
         lblTitle1.Text = "Library"
         ' 
         ' Button1
@@ -89,7 +89,7 @@ Partial Class RegistrationPage
         Button1.Location = New Point(794, 41)
         Button1.Name = "Button1"
         Button1.Size = New Size(86, 26)
-        Button1.TabIndex = 17
+        Button1.TabIndex = 4
         Button1.Text = "Cancel"
         Button1.UseVisualStyleBackColor = True
         ' 
@@ -100,7 +100,7 @@ Partial Class RegistrationPage
         Label1.Location = New Point(418, 39)
         Label1.Name = "Label1"
         Label1.Size = New Size(258, 26)
-        Label1.TabIndex = 16
+        Label1.TabIndex = 0
         Label1.Text = "Register As A Librarian"
         ' 
         ' picLogo
@@ -119,93 +119,94 @@ Partial Class RegistrationPage
         Label2.Location = New Point(102, 12)
         Label2.Name = "Label2"
         Label2.Size = New Size(0, 17)
-        Label2.TabIndex = 2
+        Label2.TabIndex = 3
         ' 
         ' txtBoxFirstName
         ' 
         txtBoxFirstName.Location = New Point(411, 187)
         txtBoxFirstName.Name = "txtBoxFirstName"
         txtBoxFirstName.Size = New Size(260, 25)
-        txtBoxFirstName.TabIndex = 20
+        txtBoxFirstName.TabIndex = 0
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Times New Roman", 14.25F)
-        Label3.Location = New Point(302, 191)
+        Label3.Location = New Point(306, 191)
         Label3.Name = "Label3"
-        Label3.Size = New Size(96, 21)
-        Label3.TabIndex = 21
-        Label3.Text = "First Name:"
+        Label3.Size = New Size(92, 21)
+        Label3.TabIndex = 12
+        Label3.Text = "First Name"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Times New Roman", 14.25F)
-        Label4.Location = New Point(284, 226)
+        Label4.Location = New Point(288, 226)
         Label4.Name = "Label4"
         Label4.RightToLeft = RightToLeft.No
-        Label4.Size = New Size(114, 21)
-        Label4.TabIndex = 23
-        Label4.Text = "Middle Name:"
+        Label4.Size = New Size(110, 21)
+        Label4.TabIndex = 11
+        Label4.Text = "Middle Name"
         ' 
         ' txtBoxMiddleName
         ' 
         txtBoxMiddleName.Location = New Point(411, 223)
         txtBoxMiddleName.Name = "txtBoxMiddleName"
         txtBoxMiddleName.Size = New Size(260, 25)
-        txtBoxMiddleName.TabIndex = 22
+        txtBoxMiddleName.TabIndex = 1
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Times New Roman", 14.25F)
-        Label5.Location = New Point(304, 262)
+        Label5.Location = New Point(308, 262)
         Label5.Name = "Label5"
-        Label5.Size = New Size(94, 21)
-        Label5.TabIndex = 25
-        Label5.Text = "Last Name:"
+        Label5.Size = New Size(90, 21)
+        Label5.TabIndex = 10
+        Label5.Text = "Last Name"
         ' 
         ' txtBoxLastName
         ' 
         txtBoxLastName.Location = New Point(411, 258)
         txtBoxLastName.Name = "txtBoxLastName"
         txtBoxLastName.Size = New Size(260, 25)
-        txtBoxLastName.TabIndex = 24
+        txtBoxLastName.TabIndex = 2
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Times New Roman", 14.25F)
-        Label6.Location = New Point(301, 299)
+        Label6.Location = New Point(305, 299)
         Label6.Name = "Label6"
-        Label6.Size = New Size(97, 21)
-        Label6.TabIndex = 27
-        Label6.Text = "User Name:"
+        Label6.Size = New Size(84, 21)
+        Label6.TabIndex = 9
+        Label6.Text = "Username"
         ' 
-        ' txtBoxUserName
+        ' txtBoxUsername
         ' 
-        txtBoxUserName.Location = New Point(411, 295)
-        txtBoxUserName.Name = "txtBoxUserName"
-        txtBoxUserName.Size = New Size(260, 25)
-        txtBoxUserName.TabIndex = 26
+        txtBoxUsername.Location = New Point(411, 295)
+        txtBoxUsername.Name = "txtBoxUsername"
+        txtBoxUsername.Size = New Size(260, 25)
+        txtBoxUsername.TabIndex = 3
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Times New Roman", 14.25F)
-        Label7.Location = New Point(310, 334)
+        Label7.Location = New Point(314, 334)
         Label7.Name = "Label7"
-        Label7.Size = New Size(88, 21)
-        Label7.TabIndex = 29
-        Label7.Text = "Password:"
+        Label7.Size = New Size(84, 21)
+        Label7.TabIndex = 8
+        Label7.Text = "Password"
         ' 
         ' txtBoxPassword
         ' 
         txtBoxPassword.Location = New Point(411, 331)
         txtBoxPassword.Name = "txtBoxPassword"
+        txtBoxPassword.PasswordChar = "*"c
         txtBoxPassword.Size = New Size(260, 25)
-        txtBoxPassword.TabIndex = 28
+        txtBoxPassword.TabIndex = 4
         ' 
         ' Label8
         ' 
@@ -216,15 +217,16 @@ Partial Class RegistrationPage
         Label8.Name = "Label8"
         Label8.RightToLeft = RightToLeft.Yes
         Label8.Size = New Size(155, 21)
-        Label8.TabIndex = 31
+        Label8.TabIndex = 7
         Label8.Text = "Confirm Password:"
         ' 
         ' txtBoxConfPass
         ' 
         txtBoxConfPass.Location = New Point(411, 366)
         txtBoxConfPass.Name = "txtBoxConfPass"
+        txtBoxConfPass.PasswordChar = "*"c
         txtBoxConfPass.Size = New Size(260, 25)
-        txtBoxConfPass.TabIndex = 30
+        txtBoxConfPass.TabIndex = 5
         ' 
         ' Label9
         ' 
@@ -233,7 +235,7 @@ Partial Class RegistrationPage
         Label9.Location = New Point(356, 142)
         Label9.Name = "Label9"
         Label9.Size = New Size(202, 23)
-        Label9.TabIndex = 32
+        Label9.TabIndex = 13
         Label9.Text = "Enter your information"
         ' 
         ' btnSubmit
@@ -243,7 +245,7 @@ Partial Class RegistrationPage
         btnSubmit.Location = New Point(411, 410)
         btnSubmit.Name = "btnSubmit"
         btnSubmit.Size = New Size(104, 37)
-        btnSubmit.TabIndex = 20
+        btnSubmit.TabIndex = 6
         btnSubmit.Text = "Submit"
         btnSubmit.UseVisualStyleBackColor = False
         ' 
@@ -259,7 +261,7 @@ Partial Class RegistrationPage
         Controls.Add(Label7)
         Controls.Add(txtBoxPassword)
         Controls.Add(Label6)
-        Controls.Add(txtBoxUserName)
+        Controls.Add(txtBoxUsername)
         Controls.Add(Label5)
         Controls.Add(txtBoxLastName)
         Controls.Add(Label4)
@@ -293,7 +295,7 @@ Partial Class RegistrationPage
     Friend WithEvents Label5 As Label
     Friend WithEvents txtBoxLastName As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents txtBoxUserName As TextBox
+    Friend WithEvents txtBoxUsername As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents txtBoxPassword As TextBox
     Friend WithEvents Label8 As Label
