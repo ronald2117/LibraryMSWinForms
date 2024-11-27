@@ -15,7 +15,7 @@ Public Class LoginForm
         Try
             conn.Open()
             Dim Query As String
-            Query = "SELECT * FROM librarian WHERE username = '" & Username.Text & "' AND password = '" & Password.Text & "'"
+            Query = "SELECT * FROM users WHERE username = '" & Username.Text & "' AND password = '" & Password.Text & "'"
             COMMAND = New MySqlCommand(Query, conn)
             Dim count As Integer
             READER = COMMAND.ExecuteReader
