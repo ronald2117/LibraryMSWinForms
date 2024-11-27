@@ -205,7 +205,7 @@ Partial Class Inventory
         ' 
         btnAddBook.Location = New Point(490, 141)
         btnAddBook.Name = "btnAddBook"
-        btnAddBook.Size = New Size(75, 51)
+        btnAddBook.Size = New Size(75, 23)
         btnAddBook.TabIndex = 22
         btnAddBook.Text = "Add"
         btnAddBook.UseVisualStyleBackColor = True

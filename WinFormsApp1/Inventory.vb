@@ -25,4 +25,9 @@ Public Class Inventory
         Close()
         addBookForm.Show()
     End Sub
+    Private Sub btnUpdateBook_Click(sender As Object, e As EventArgs) Handles btnUpdateBook.Click
+        Dim updateBookForm As New UpdateBookForm
+        Close()
+        updateBookForm.Show()
+    End Sub
 End Class
