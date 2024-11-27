@@ -117,7 +117,7 @@ Partial Class Inventory
         ' 
         lblTitle2.AutoSize = True
         lblTitle2.Font = New Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblTitle2.Location = New Point(121, 65)
+        lblTitle2.Location = New Point(121, 57)
         lblTitle2.Name = "lblTitle2"
         lblTitle2.Size = New Size(180, 22)
         lblTitle2.TabIndex = 15
@@ -127,7 +127,7 @@ Partial Class Inventory
         ' 
         lblTitle1.AutoSize = True
         lblTitle1.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblTitle1.Location = New Point(121, 39)
+        lblTitle1.Location = New Point(121, 31)
         lblTitle1.Name = "lblTitle1"
         lblTitle1.Size = New Size(94, 26)
         lblTitle1.TabIndex = 13
@@ -195,7 +195,7 @@ Partial Class Inventory
         Label3.AutoSize = True
         Label3.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
-        Label3.Location = New Point(22, 138)
+        Label3.Location = New Point(42, 138)
         Label3.Name = "Label3"
         Label3.Size = New Size(74, 26)
         Label3.TabIndex = 21
@@ -232,9 +232,9 @@ Partial Class Inventory
         ' 
         dataGridInventory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dataGridInventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dataGridInventory.Location = New Point(46, 182)
+        dataGridInventory.Location = New Point(106, 199)
         dataGridInventory.Name = "dataGridInventory"
-        dataGridInventory.Size = New Size(697, 239)
+        dataGridInventory.Size = New Size(591, 211)
         dataGridInventory.TabIndex = 25
         ' 
         ' Inventory

@@ -54,7 +54,7 @@ Partial Class MainPage
         ' 
         lblTitle1.AutoSize = True
         lblTitle1.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblTitle1.Location = New Point(121, 39)
+        lblTitle1.Location = New Point(121, 31)
         lblTitle1.Name = "lblTitle1"
         lblTitle1.Size = New Size(94, 26)
         lblTitle1.TabIndex = 13
@@ -74,7 +74,7 @@ Partial Class MainPage
         ' 
         lblTitle2.AutoSize = True
         lblTitle2.Font = New Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblTitle2.Location = New Point(121, 65)
+        lblTitle2.Location = New Point(121, 57)
         lblTitle2.Name = "lblTitle2"
         lblTitle2.Size = New Size(180, 22)
         lblTitle2.TabIndex = 15
