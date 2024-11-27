@@ -232,7 +232,7 @@ Partial Class Inventory
         ' 
         dataGridInventory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dataGridInventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dataGridInventory.Location = New Point(106, 199)
+        dataGridInventory.Location = New Point(90, 198)
         dataGridInventory.Name = "dataGridInventory"
         dataGridInventory.Size = New Size(591, 211)
         dataGridInventory.TabIndex = 25

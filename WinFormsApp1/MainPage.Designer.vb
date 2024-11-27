@@ -27,13 +27,13 @@ Partial Class MainPage
         lblTitle1 = New Label()
         picLogo = New PictureBox()
         lblTitle2 = New Label()
-        LinkLabel1 = New LinkLabel()
-        LinkLabel2 = New LinkLabel()
+        linkHome = New LinkLabel()
+        linkInventory = New LinkLabel()
         Panel1 = New Panel()
         Label1 = New Label()
         btnLogout = New Button()
-        LinkLabel4 = New LinkLabel()
-        LinkLabel3 = New LinkLabel()
+        linkTransactions = New LinkLabel()
+        linkBorrowers = New LinkLabel()
         Label3 = New Label()
         Label4 = New Label()
         Label5 = New Label()
@@ -80,45 +80,45 @@ Partial Class MainPage
         lblTitle2.TabIndex = 15
         lblTitle2.Text = "Management System"
         ' 
-        ' LinkLabel1
+        ' linkHome
         ' 
-        LinkLabel1.ActiveLinkColor = Color.White
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Font = New Font("Times New Roman", 12F)
-        LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(325, 46)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(46, 19)
-        LinkLabel1.TabIndex = 16
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Home"
+        linkHome.ActiveLinkColor = Color.White
+        linkHome.AutoSize = True
+        linkHome.Font = New Font("Times New Roman", 12F)
+        linkHome.LinkColor = Color.White
+        linkHome.Location = New Point(325, 46)
+        linkHome.Name = "linkHome"
+        linkHome.Size = New Size(46, 19)
+        linkHome.TabIndex = 16
+        linkHome.TabStop = True
+        linkHome.Text = "Home"
         ' 
-        ' LinkLabel2
+        ' linkInventory
         ' 
-        LinkLabel2.ActiveLinkColor = Color.White
-        LinkLabel2.AutoSize = True
-        LinkLabel2.Font = New Font("Times New Roman", 12F)
-        LinkLabel2.LinkColor = Color.White
-        LinkLabel2.Location = New Point(383, 46)
-        LinkLabel2.Name = "LinkLabel2"
-        LinkLabel2.Size = New Size(66, 19)
-        LinkLabel2.TabIndex = 17
-        LinkLabel2.TabStop = True
-        LinkLabel2.Text = "Inventory"
+        linkInventory.ActiveLinkColor = Color.White
+        linkInventory.AutoSize = True
+        linkInventory.Font = New Font("Times New Roman", 12F)
+        linkInventory.LinkColor = Color.White
+        linkInventory.Location = New Point(383, 46)
+        linkInventory.Name = "linkInventory"
+        linkInventory.Size = New Size(66, 19)
+        linkInventory.TabIndex = 17
+        linkInventory.TabStop = True
+        linkInventory.Text = "Inventory"
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(btnLogout)
-        Panel1.Controls.Add(LinkLabel4)
+        Panel1.Controls.Add(linkTransactions)
         Panel1.Controls.Add(lblTitle2)
         Panel1.Controls.Add(lblTitle1)
-        Panel1.Controls.Add(LinkLabel3)
+        Panel1.Controls.Add(linkBorrowers)
         Panel1.Controls.Add(picLogo)
-        Panel1.Controls.Add(LinkLabel2)
+        Panel1.Controls.Add(linkInventory)
         Panel1.Controls.Add(Label2)
-        Panel1.Controls.Add(LinkLabel1)
+        Panel1.Controls.Add(linkHome)
         Panel1.ForeColor = Color.White
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
@@ -146,33 +146,33 @@ Partial Class MainPage
         btnLogout.Text = "Signout"
         btnLogout.UseVisualStyleBackColor = True
         ' 
-        ' LinkLabel4
+        ' linkTransactions
         ' 
-        LinkLabel4.ActiveLinkColor = Color.White
-        LinkLabel4.AutoSize = True
-        LinkLabel4.Font = New Font("Times New Roman", 12F)
-        LinkLabel4.LinkColor = Color.White
-        LinkLabel4.Location = New Point(536, 46)
-        LinkLabel4.Name = "LinkLabel4"
-        LinkLabel4.RightToLeft = RightToLeft.No
-        LinkLabel4.Size = New Size(84, 19)
-        LinkLabel4.TabIndex = 19
-        LinkLabel4.TabStop = True
-        LinkLabel4.Text = "Transactions"
-        LinkLabel4.TextAlign = ContentAlignment.TopCenter
+        linkTransactions.ActiveLinkColor = Color.White
+        linkTransactions.AutoSize = True
+        linkTransactions.Font = New Font("Times New Roman", 12F)
+        linkTransactions.LinkColor = Color.White
+        linkTransactions.Location = New Point(536, 46)
+        linkTransactions.Name = "linkTransactions"
+        linkTransactions.RightToLeft = RightToLeft.No
+        linkTransactions.Size = New Size(84, 19)
+        linkTransactions.TabIndex = 19
+        linkTransactions.TabStop = True
+        linkTransactions.Text = "Transactions"
+        linkTransactions.TextAlign = ContentAlignment.TopCenter
         ' 
-        ' LinkLabel3
+        ' linkBorrowers
         ' 
-        LinkLabel3.ActiveLinkColor = Color.White
-        LinkLabel3.AutoSize = True
-        LinkLabel3.Font = New Font("Times New Roman", 12F)
-        LinkLabel3.LinkColor = Color.White
-        LinkLabel3.Location = New Point(458, 46)
-        LinkLabel3.Name = "LinkLabel3"
-        LinkLabel3.Size = New Size(74, 19)
-        LinkLabel3.TabIndex = 18
-        LinkLabel3.TabStop = True
-        LinkLabel3.Text = "Borrowers"
+        linkBorrowers.ActiveLinkColor = Color.White
+        linkBorrowers.AutoSize = True
+        linkBorrowers.Font = New Font("Times New Roman", 12F)
+        linkBorrowers.LinkColor = Color.White
+        linkBorrowers.Location = New Point(458, 46)
+        linkBorrowers.Name = "linkBorrowers"
+        linkBorrowers.Size = New Size(74, 19)
+        linkBorrowers.TabIndex = 18
+        linkBorrowers.TabStop = True
+        linkBorrowers.Text = "Borrowers"
         ' 
         ' Label3
         ' 
@@ -239,11 +239,11 @@ Partial Class MainPage
     Friend WithEvents lblTitle1 As Label
     Friend WithEvents picLogo As PictureBox
     Friend WithEvents lblTitle2 As Label
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents linkHome As LinkLabel
+    Friend WithEvents linkInventory As LinkLabel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents LinkLabel4 As LinkLabel
-    Friend WithEvents LinkLabel3 As LinkLabel
+    Friend WithEvents linkTransactions As LinkLabel
+    Friend WithEvents linkBorrowers As LinkLabel
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents btnLogout As Button
