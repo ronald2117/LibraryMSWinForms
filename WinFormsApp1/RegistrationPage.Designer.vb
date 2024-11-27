@@ -26,7 +26,7 @@ Partial Class RegistrationPage
         Panel1 = New Panel()
         lblTitle2 = New Label()
         lblTitle1 = New Label()
-        Button1 = New Button()
+        btnCancel = New Button()
         Label1 = New Label()
         picLogo = New PictureBox()
         Label2 = New Label()
@@ -53,7 +53,7 @@ Partial Class RegistrationPage
         Panel1.BackColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
         Panel1.Controls.Add(lblTitle2)
         Panel1.Controls.Add(lblTitle1)
-        Panel1.Controls.Add(Button1)
+        Panel1.Controls.Add(btnCancel)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(picLogo)
         Panel1.Controls.Add(Label2)
@@ -83,15 +83,15 @@ Partial Class RegistrationPage
         lblTitle1.TabIndex = 2
         lblTitle1.Text = "Library"
         ' 
-        ' Button1
+        ' btnCancel
         ' 
-        Button1.ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
-        Button1.Location = New Point(794, 41)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(86, 26)
-        Button1.TabIndex = 4
-        Button1.Text = "Cancel"
-        Button1.UseVisualStyleBackColor = True
+        btnCancel.ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        btnCancel.Location = New Point(794, 41)
+        btnCancel.Name = "btnCancel"
+        btnCancel.Size = New Size(86, 26)
+        btnCancel.TabIndex = 4
+        btnCancel.Text = "Cancel"
+        btnCancel.UseVisualStyleBackColor = True
         ' 
         ' Label1
         ' 
@@ -287,7 +287,7 @@ Partial Class RegistrationPage
     Friend WithEvents picLogo As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnCancel As Button
     Friend WithEvents txtBoxFirstName As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label

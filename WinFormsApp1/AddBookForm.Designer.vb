@@ -31,6 +31,7 @@ Partial Class AddBookForm
         txtBoxQuantity = New TextBox()
         Label2 = New Label()
         txtBoxAuthor = New TextBox()
+        btnCancel = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -125,12 +126,23 @@ Partial Class AddBookForm
         txtBoxAuthor.Size = New Size(219, 23)
         txtBoxAuthor.TabIndex = 25
         ' 
+        ' btnCancel
+        ' 
+        btnCancel.ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        btnCancel.Location = New Point(460, 32)
+        btnCancel.Name = "btnCancel"
+        btnCancel.Size = New Size(86, 26)
+        btnCancel.TabIndex = 26
+        btnCancel.Text = "Cancel"
+        btnCancel.UseVisualStyleBackColor = True
+        ' 
         ' AddBookForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
         ClientSize = New Size(581, 329)
+        Controls.Add(btnCancel)
         Controls.Add(Panel1)
         Controls.Add(Label3)
         Name = "AddBookForm"
@@ -151,4 +163,5 @@ Partial Class AddBookForm
     Friend WithEvents Label2 As Label
     Friend WithEvents txtBoxAuthor As TextBox
     Friend WithEvents btnSubmit As Button
+    Friend WithEvents btnCancel As Button
 End Class

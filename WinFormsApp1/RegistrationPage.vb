@@ -29,7 +29,7 @@ Public Class RegistrationPage
         End Try
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         Close()
         loginForm.Show()
     End Sub

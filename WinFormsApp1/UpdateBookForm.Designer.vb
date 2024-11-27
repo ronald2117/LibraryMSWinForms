@@ -33,6 +33,7 @@ Partial Class UpdateBookForm
         Label1 = New Label()
         txtBoxTitle = New TextBox()
         Label3 = New Label()
+        btnCancel = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -139,7 +140,7 @@ Partial Class UpdateBookForm
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Times New Roman", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.White
         Label3.Location = New Point(32, 32)
         Label3.Name = "Label3"
@@ -147,12 +148,23 @@ Partial Class UpdateBookForm
         Label3.TabIndex = 26
         Label3.Text = "Enter Book Details"
         ' 
+        ' btnCancel
+        ' 
+        btnCancel.ForeColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
+        btnCancel.Location = New Point(464, 32)
+        btnCancel.Name = "btnCancel"
+        btnCancel.Size = New Size(86, 26)
+        btnCancel.TabIndex = 27
+        btnCancel.Text = "Cancel"
+        btnCancel.UseVisualStyleBackColor = True
+        ' 
         ' UpdateBookForm
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(255), CByte(98), CByte(0))
         ClientSize = New Size(581, 329)
+        Controls.Add(btnCancel)
         Controls.Add(Panel1)
         Controls.Add(Label3)
         Name = "UpdateBookForm"
@@ -175,4 +187,5 @@ Partial Class UpdateBookForm
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents txtBoxId As TextBox
+    Friend WithEvents btnCancel As Button
 End Class
