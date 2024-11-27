@@ -203,27 +203,27 @@ Partial Class Inventory
         ' 
         ' btnAddBook
         ' 
-        btnAddBook.Location = New Point(490, 141)
+        btnAddBook.Location = New Point(490, 138)
         btnAddBook.Name = "btnAddBook"
-        btnAddBook.Size = New Size(75, 23)
+        btnAddBook.Size = New Size(80, 26)
         btnAddBook.TabIndex = 22
         btnAddBook.Text = "Add"
         btnAddBook.UseVisualStyleBackColor = True
         ' 
         ' btnUpdateBook
         ' 
-        btnUpdateBook.Location = New Point(586, 141)
+        btnUpdateBook.Location = New Point(586, 138)
         btnUpdateBook.Name = "btnUpdateBook"
-        btnUpdateBook.Size = New Size(75, 23)
+        btnUpdateBook.Size = New Size(79, 26)
         btnUpdateBook.TabIndex = 23
         btnUpdateBook.Text = "Update"
         btnUpdateBook.UseVisualStyleBackColor = True
         ' 
         ' btnDeleteBook
         ' 
-        btnDeleteBook.Location = New Point(682, 143)
+        btnDeleteBook.Location = New Point(684, 138)
         btnDeleteBook.Name = "btnDeleteBook"
-        btnDeleteBook.Size = New Size(75, 23)
+        btnDeleteBook.Size = New Size(78, 26)
         btnDeleteBook.TabIndex = 24
         btnDeleteBook.Text = "Delete"
         btnDeleteBook.UseVisualStyleBackColor = True

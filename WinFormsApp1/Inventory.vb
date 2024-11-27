@@ -21,13 +21,15 @@ Public Class Inventory
     End Sub
 
     Private Sub btnAddBook_Click(sender As Object, e As EventArgs) Handles btnAddBook.Click
-        Dim addBookForm As New AddBookForm
         Close()
-        addBookForm.Show()
+        AddBookForm.Show()
     End Sub
     Private Sub btnUpdateBook_Click(sender As Object, e As EventArgs) Handles btnUpdateBook.Click
-        Dim updateBookForm As New UpdateBookForm
         Close()
-        updateBookForm.Show()
+        UpdateBookForm.Show()
+    End Sub
+    Private Sub btnDeleteBook_Click(sender As Object, e As EventArgs) Handles btnDeleteBook.Click
+        Close()
+        DeleteBookForm.Show()
     End Sub
 End Class
